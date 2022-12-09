@@ -86,7 +86,9 @@ WebDriver driver;
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			SellOnYarnBiz.click();
+			Thread.sleep(1000);
 			NewSeller.click();
+			Thread.sleep(1000);
 			BecomeSeller.click();
 			
 		}
@@ -95,7 +97,10 @@ WebDriver driver;
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 			 BuyOnYarnBiz.click();
+				Thread.sleep(1000);
 			   NewBuyer.click();
+				Thread.sleep(1000);
+
 			   BecomeBuyer.click();	
 			   }
 		
@@ -104,8 +109,12 @@ WebDriver driver;
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			Thread.sleep(2000);
 		       BuyOnYarnBiz.click();
+				Thread.sleep(1000);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			   NewBuyer.click();
-			   BecomeBuyer.click();	
+				Thread.sleep(1000);
+			   BecomeBuyer.click();
+				Thread.sleep(1000);
 			    driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("Sandeep");
 				driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("Ghate");
 				driver.findElement(By.xpath("//input[@id='customer_mobile']")).sendKeys("8334985590");//Change
@@ -116,6 +125,7 @@ WebDriver driver;
 				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       
 				driver.findElement(By.xpath("//input[@id='otp']")).sendKeys("1234");
 				driver.findElement(By.xpath("//button[@class='verif_otp action primary']")).click();
+				Thread.sleep(2000);
 				driver.findElement(By.xpath("//button[@class='action primary panbtn padding_btn']")).click();
 				driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("saneokpokhdh@techsevin.com");//Change
 				driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Sandeep@12345");
@@ -150,7 +160,11 @@ WebDriver driver;
 			Thread.sleep(2000);
 	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			SellOnYarnBiz.click();
+			Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			NewSeller.click();
+			Thread.sleep(1000);
+
 			BecomeSeller.click();
 			driver.findElement(By.xpath("//input[@id='supplier-email']")).sendKeys("Sqwqokzokqqug@techsevin.com");//Plz Change
 			driver.findElement(By.xpath("//input[@id='supplier-password']")).sendKeys("Sandeep@1234");
@@ -164,9 +178,10 @@ WebDriver driver;
 
 			driver.findElement(By.xpath("//input[@id='otp']")).sendKeys("1234");
 			driver.findElement(By.xpath("//button[@class='verif_otp action primary']")).click();
-		//	driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);	       
-            Thread.sleep(1000);
+		    driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+            Thread.sleep(2000);
      		driver.findElement(By.xpath("//span[text()='Proceed']")).click();
+            Thread.sleep(2000);
 			driver.findElement(By.xpath("//input[@id='supplier-first-name']")).sendKeys("Sandeep");
 			driver.findElement(By.xpath("//input[@id='supplier-last-name']")).sendKeys("Ghate");
 			driver.findElement(By.xpath("//input[@id='supplier-company']")).sendKeys("Techsevin Pvt Ltd");
