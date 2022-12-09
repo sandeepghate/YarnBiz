@@ -9,7 +9,31 @@
 
   <test thread-count="5" name="Test">
    <classes>
-       <class name="yarnbiz.testcases.LoginPageTest"/>
+       
+       <class name="yarnbiz.testcases.Home_Page_001"/>
+       <class name="yarnbiz.testcases.Home_Page_001"/>
+             
+       <class name="yarnbiz.testcases.Registration_Buyer_001"/>
+       <class name="yarnbiz.testcases.Registration_Buyer_002"/>
+       <class name="yarnbiz.testcases.Registration_Buyer_003"/>
+       <class name="yarnbiz.testcases.Registration_Buyer_004"/> 
+       <class name="yarnbiz.testcases.Registration_Buyer_005"/>        
+       <class name="yarnbiz.testcases.Registration_Buyer_006"/>        
+       <class name="yarnbiz.testcases.Registration_Buyer_007"/>        
+              
+       <class name="yarnbiz.testcases.Registration_Seller_001"/>
+       <class name="yarnbiz.testcases.Registration_Seller_002"/>
+       <class name="yarnbiz.testcases.Registration_Seller_003"/>
+       <class name="yarnbiz.testcases.Registration_Seller_004"/>
+       <class name="yarnbiz.testcases.Registration_Seller_005"/>
+       <class name="yarnbiz.testcases.Registration_Seller_006"/>
+       <class name="yarnbiz.testcases.Registration_Seller_007"/>
+ 
+       
+              
+   
     </classes>
+    
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

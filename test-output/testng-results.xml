@@ -2,30 +2,29 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-30T17:46:10 IST" name="Suite" finished-at="2022-11-30T17:47:38 IST" duration-ms="87810">
+  <suite started-at="2022-12-09T12:50:13 IST" name="Default suite" finished-at="2022-12-09T12:51:32 IST" duration-ms="78670">
     <groups>
     </groups>
-    <test started-at="2022-11-30T17:46:10 IST" name="Test" finished-at="2022-11-30T17:47:38 IST" duration-ms="87810">
-      <class name="yarnbiz.testcases.LoginPageTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:yarnbiz.testcases.LoginPageTest@609bcfb6]" started-at="2022-11-30T17:45:25 IST" name="initBrowser" finished-at="2022-11-30T17:46:10 IST" duration-ms="45355" status="PASS">
+    <test started-at="2022-12-09T12:50:13 IST" name="Default test" finished-at="2022-12-09T12:51:32 IST" duration-ms="78670">
+      <class name="yarnbiz.testcases.Login_Seller_">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:yarnbiz.testcases.Login_Seller_@6f8e8894]" started-at="2022-12-09T12:50:13 IST" name="setUp" finished-at="2022-12-09T12:51:23 IST" duration-ms="69701" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="objectCreation()[pri:0, instance:yarnbiz.testcases.LoginPageTest@609bcfb6]" started-at="2022-11-30T17:46:10 IST" name="objectCreation" finished-at="2022-11-30T17:46:12 IST" duration-ms="1885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- objectCreation -->
-        <test-method signature="verifyLogin()[pri:1, instance:yarnbiz.testcases.LoginPageTest@609bcfb6]" started-at="2022-11-30T17:46:12 IST" name="verifyLogin" finished-at="2022-11-30T17:47:37 IST" duration-ms="85206" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_YBZ_004()[pri:0, instance:yarnbiz.testcases.Login_Seller_@6f8e8894]" started-at="2022-12-09T12:51:23 IST" name="TC_YBZ_004" finished-at="2022-12-09T12:51:32 IST" duration-ms="8860" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for frame to be available: By.xpath: //iframe[@name='a-oxoisjqpadz'] (tried for 60 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[expected [Supplier Dashboard] but found [Seller Login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for frame to be available: By.xpath: //iframe[@name='a-oxoisjqpadz'] (tried for 60 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at yarnbiz.pages.LoginPage.captcha(LoginPage.java:80)
-at yarnbiz.testcases.LoginPageTest.verifyLogin(LoginPageTest.java:18)
+              <![CDATA[java.lang.AssertionError: expected [Supplier Dashboard] but found [Seller Login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at yarnbiz.testcases.Login_Seller_.TC_YBZ_004(Login_Seller_.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,46 +53,13 @@ at org.testng.TestNG.run(TestNG.java:1060)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//iframe[@name='a-oxoisjqpadz']"}
-  (Session info: chrome=108.0.5359.72)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-PQK246G', ip: '192.168.1.43', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3f117222b93acc4fb851451013d405fd, findElement {using=xpath, value=//iframe[@name='a-oxoisjqpadz']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.72, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59272}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59272/devtoo..., se:cdpVersion: 108.0.5359.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3f117222b93acc4fb851451013d405fd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:494)
-at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:490)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:yarnbiz.testcases.LoginPageTest@609bcfb6]" started-at="2022-11-30T17:47:39 IST" name="tearDown" finished-at="2022-11-30T17:47:41 IST" duration-ms="1284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- yarnbiz.testcases.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- TC_YBZ_004 -->
+      </class> <!-- yarnbiz.testcases.Login_Seller_ -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

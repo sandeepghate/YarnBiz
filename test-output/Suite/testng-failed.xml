@@ -6,14 +6,34 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="yarnbiz.testcases.LoginPageTest">
+      <class name="yarnbiz.testcases.Registration_Buyer_002">
         <methods>
-          <include name="initBrowser"/>
-          <include name="verifyLogin"/>
-          <include name="objectCreation"/>
+          <include name="setUp"/>
+          <include name="Registration_Buyer_002"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- yarnbiz.testcases.LoginPageTest -->
+      </class> <!-- yarnbiz.testcases.Registration_Buyer_002 -->
+      <class name="yarnbiz.testcases.Registration_Buyer_001">
+        <methods>
+          <include name="RegistrationPage_Buyer_001"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- yarnbiz.testcases.Registration_Buyer_001 -->
+      <class name="yarnbiz.testcases.Registration_Buyer_003">
+        <methods>
+          <include name="setUp"/>
+          <include name="Registration_Buyer_003"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- yarnbiz.testcases.Registration_Buyer_003 -->
+      <class name="yarnbiz.testcases.Registration_Seller_001">
+        <methods>
+          <include name="RegistrationPage_Seller_001"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- yarnbiz.testcases.Registration_Seller_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

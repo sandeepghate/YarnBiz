@@ -15,7 +15,7 @@ static ExtentReports extent;
 		
 		ExtentHtmlReporter reporter = new ExtentHtmlReporter(path);
 		
-		reporter.config().setTheme(Theme.DARK);
+		reporter.config().setTheme(Theme.STANDARD);
 		
 		reporter.config().setReportName("YarnBiz Report");
 		

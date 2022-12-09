@@ -20,10 +20,11 @@ public class LoginPage extends BaseClass {
 
 	WebDriver driver;
 	
+	//*[@id="ammenu-header-container"]/div[1]/div/ul/li[3]/a
 	@FindBy(xpath ="//a[contains(text(),'Buyer Login ')]")
 	private WebElement BuyerLogin;
 	
-	@FindBy(xpath ="//*[@id='id6Gcz2n3y']")
+	@FindBy(xpath ="//a[contains(text(),'Seller Login')]")
 	private WebElement SellerLogin;
 	
 	@FindBy(xpath ="//*[@class='action primary accept']")
