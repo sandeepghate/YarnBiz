@@ -37,7 +37,7 @@ public class Registration_Buyer_007 extends ListenerClass {
 		  Thread.sleep(1000);
 	     	WebElement NotVerifiedMsg=driver.findElement(By.xpath("//span[text()='Not Verified']"));
 	 		Assert.assertTrue(NotVerifiedMsg.isDisplayed());
-	         // test.info("Get error message- Not Verified");
+	        test.info("Get error message- Not Verified");
 	 		
 	 		Thread.sleep(2000);
 	 		driver.findElement(By.xpath("//input[@id='otp']")).clear();
@@ -46,7 +46,7 @@ public class Registration_Buyer_007 extends ListenerClass {
 			 Thread.sleep(1000);
 		     	WebElement VerifiedMsg=driver.findElement(By.xpath("//span[text()='Verified']"));
 		 		Assert.assertTrue(VerifiedMsg.isDisplayed());
-		         // test.info("Get Success message-Verified");
+		        test.info("Get Success message-Verified");
 	 		//span[text()='Verified']
 
 

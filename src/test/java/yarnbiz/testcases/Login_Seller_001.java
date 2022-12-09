@@ -29,7 +29,7 @@ public class Login_Seller_001 extends ListenerClass {
 	String ExpectedTitle= "Seller Login"; 
 	 String ActualTitle =driver.getTitle();
 	 Assert.assertEquals(ActualTitle, ExpectedTitle);
-   // test.info("Successfully Redirect to Seller Registration Form");
+     test.info("Successfully Redirect to Seller Login ");
   }
 	
 }

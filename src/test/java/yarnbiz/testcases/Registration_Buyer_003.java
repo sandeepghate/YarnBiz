@@ -25,16 +25,14 @@ public class Registration_Buyer_003 extends ListenerClass{
 		
 	@Test
 	public void Registration_Buyer_003() throws InterruptedException {
-		//rp.BuyerRegistration();
 		rp.NewBuyer();
-	//	test.info("Buyer Registeration form filled Successfully");
+		test.info("Buyer Registeration form filled Successfully");
 		rp.CreateAccountBuyer();
-//		test.info("Successfully clicked on create account button");
+		test.info("Successfully clicked on create account button");
 		
 		Thread.sleep(1000);
     	WebElement RequiredMsg=driver.findElement(By.xpath("//div[text()='This is a required field.']"));
 		Assert.assertTrue(RequiredMsg.isDisplayed());
-        // test.info("Get error message- this is required field");
 		
 		
 		//span[text()='Ok']

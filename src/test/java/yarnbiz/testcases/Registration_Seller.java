@@ -30,12 +30,12 @@ public class Registration_Seller extends ListenerClass {
     public void Registration_Seller() throws InterruptedException 
     {
     	rp.SellerRegistration();
-		//test.info("Seller Registeration form filled Successfully");
+		test.info("Seller Registeration form filled Successfully");
     	rp.CreateAccountSeller();
-    	//Thread.sleep(1000);
+    	Thread.sleep(1000);
     	WebElement VoilaCreate=driver.findElement(By.xpath("//div[text()='Voila! Account Created!']"));
 		Assert.assertTrue(VoilaCreate.isDisplayed());
-      //test.info("text is displayed");
+        test.info("text is displayed");
 
     	//div[text()='Voila! Account Created!']
     }

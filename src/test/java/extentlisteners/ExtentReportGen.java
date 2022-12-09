@@ -23,9 +23,9 @@ static ExtentReports extent;
 		
 		extent.attachReporter(reporter);
 		
-		extent.setSystemInfo("Project name", "YarnBiz");
+		extent.setSystemInfo("Project Name", "YarnBiz");
 		
-		extent.setSystemInfo("Environment", "DEV");
+		extent.setSystemInfo("Environment", "STAGE");
 		
 		extent.setSystemInfo("Executed by", "Sandeep Ghate");
 		

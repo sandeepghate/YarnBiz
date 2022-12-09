@@ -49,7 +49,7 @@ public class Registration_Seller_006 extends ListenerClass{
 		Thread.sleep(1000);
     	WebElement RequiredMsg=driver.findElement(By.xpath("//div[text()='This is a required field.']"));
 		Assert.assertTrue(RequiredMsg.isDisplayed());
-        // test.info("Get error message- this is required field");
+        test.info("Get error message- this is required field");
 		
 		
       //div[text()='This is a required field.']

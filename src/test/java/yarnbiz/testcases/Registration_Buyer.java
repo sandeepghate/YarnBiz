@@ -33,7 +33,7 @@ public class Registration_Buyer extends ListenerClass{
 
 		WebElement ThankYou=driver.findElement(By.xpath("//div[text()='Thank you for registering with Yarnbiz.']"));
 		Assert.assertTrue(ThankYou.isDisplayed());
-         test.info("text is displayed");
+        test.info("text is displayed");
 		
 
 		//span[text()='Ok']

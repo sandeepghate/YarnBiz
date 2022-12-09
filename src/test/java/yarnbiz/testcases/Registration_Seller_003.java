@@ -27,10 +27,6 @@ public class Registration_Buyer_003 extends ListenerClass{
 
 	@Test
 	public void Registration_Seller_003() throws InterruptedException {
-//		rp.SellerRegistration();
-//		test.info("Seller Registeration form filled Successfully");
-//    	rp.CreateAccountSeller();
-//		test.info("Successfully clicked on create account button");
 
 		rp.NewSeller();
 		driver.findElement(By.xpath("//input[@id='supplier-email']")).sendKeys("ashzziuags@techsevin.com");//Plz Change
@@ -55,7 +51,7 @@ public class Registration_Buyer_003 extends ListenerClass{
 		Thread.sleep(1000);
     	WebElement RequiredMsg=driver.findElement(By.xpath("//div[text()='This is a required field.']"));
 		Assert.assertTrue(RequiredMsg.isDisplayed());
-        // test.info("Get error message- this is required field");
+        test.info("Get error message- this is required field");
 		
 		
       //div[text()='This is a required field.']
