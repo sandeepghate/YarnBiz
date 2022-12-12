@@ -26,14 +26,14 @@ public class Registration_Buyer extends ListenerClass{
 	@Test
 	public void Registration_Buyer() throws InterruptedException {
 		rp.BuyerRegistration();;
-		test.info("Buyer Registeration form filled Successfully");
+	//	test.info("Buyer Registeration form filled Successfully");
 		rp.CreateAccountBuyer();
-		test.info("Successfully clicked on create account button");
+		//test.info("Successfully clicked on create account button");
 		driver.findElement(By.xpath("//span[text()='Ok']")).click();
 
 		WebElement ThankYou=driver.findElement(By.xpath("//div[text()='Thank you for registering with Yarnbiz.']"));
 		Assert.assertTrue(ThankYou.isDisplayed());
-        test.info("text is displayed");
+        //test.info("text is displayed");
 		
 
 		//span[text()='Ok']

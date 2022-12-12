@@ -12,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import net.bytebuddy.agent.builder.AgentBuilder.RedefinitionStrategy.DiscoveryStrategy.Explicit;
@@ -45,6 +46,9 @@ public class LoginPage extends BaseClass {
 	@FindBy(xpath ="//*[@type='submit']")
 	private WebElement loginbutton;
 	
+	@FindBy(xpath ="//select[@id='reset_type_login']")
+	private WebElement EmailOrNumber;
+	
 
 	public LoginPage(WebDriver driver) throws IOException {
 		this.driver = driver;
@@ -52,18 +56,34 @@ public class LoginPage extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void BuyerLogin() {
+	public void SellerLoginWithNumber () throws InterruptedException
+	{
+		//SellerLogin();
+		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	//	WebElement	EmailOrNumber=driver.findElement(By.xpath("//select[@id='reset_type_login']"));
+		EmailOrNumber.click();
+			Select sel = new Select (EmailOrNumber);
+			sel.selectByVisibleText("Mobile");
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("input[@id='login_mobile']")).sendKeys("9510112288");
+			
+	}
+	public void BuyerLogin() throws InterruptedException {
+		Thread.sleep(1000);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
      BuyerLogin.click();
 		
 	}
 	
-	public void SellerLogin() {
+	public void SellerLogin() throws InterruptedException {
+		Thread.sleep(1000);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     SellerLogin.click();
 	}
 
-    public void enterCredentials(){
+    public void enterCredentials() throws InterruptedException{
+		Thread.sleep(1000);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		username.sendKeys(prop.getProperty("username"));
 		password.sendKeys(prop.getProperty("password"));
@@ -85,7 +105,8 @@ public class LoginPage extends BaseClass {
    }
 	
 
-	public void clickOnLogin() {
+	public void clickOnLogin() throws InterruptedException {
+		Thread.sleep(1000);
 		loginbutton.click();
 	}
 		

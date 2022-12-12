@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="yarnbiz.testcases.Login_Seller_">
+      <class name="yarnbiz.testcases.Login_Buyer_007">
         <methods>
-          <include name="TC_YBZ_004"/>
+          <include name="Login_Buyer_007"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- yarnbiz.testcases.Login_Seller_ -->
+      </class> <!-- yarnbiz.testcases.Login_Buyer_007 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
