@@ -25,7 +25,7 @@ public class Login_Seller_006 extends ListenerClass{
 		lp.SellerLogin();;
 		//test.info("Clicked On Seller Login");
 	   
-	   Thread.sleep(1000);
+	   Thread.sleep(2000);
 	  
 		lp.clickOnLogin();
 	    //test.info("clicked on login button");

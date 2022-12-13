@@ -29,6 +29,27 @@
        <class name="yarnbiz.testcases.Registration_Seller_006"/>
        <class name="yarnbiz.testcases.Registration_Seller_007"/>
        
+       <class name="yarnbiz.testcases.Login_Buyer_001"/>
+       <class name="yarnbiz.testcases.Login_Buyer_002"/>
+       <class name="yarnbiz.testcases.Login_Buyer_003"/>
+       <class name="yarnbiz.testcases.Login_Buyer_004"/>
+       <class name="yarnbiz.testcases.Login_Buyer_005"/>
+       <class name="yarnbiz.testcases.Login_Buyer_006"/>
+       <class name="yarnbiz.testcases.Login_Buyer_007"/>
+
+       <class name="yarnbiz.testcases.Login_Seller_001"/>
+       <class name="yarnbiz.testcases.Login_Seller_002"/>
+       <class name="yarnbiz.testcases.Login_Seller_003"/>
+       <class name="yarnbiz.testcases.Login_Seller_004"/>
+       <class name="yarnbiz.testcases.Login_Seller_005"/>
+       <class name="yarnbiz.testcases.Login_Seller_006"/>
+      
+       <class name="yarnbiz.testcases.Forgot_Password_Buyer_001"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Buyer_002"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Buyer_003"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Seller_001"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Seller_002"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Seller_003"/>
               
    
     </classes>

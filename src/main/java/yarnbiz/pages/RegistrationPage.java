@@ -117,7 +117,7 @@ WebDriver driver;
 				Thread.sleep(1000);
 			    driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys("Sandeep");
 				driver.findElement(By.xpath("//input[@id='lastname']")).sendKeys("Ghate");
-				driver.findElement(By.xpath("//input[@id='customer_mobile']")).sendKeys("7752462188");//Change
+				driver.findElement(By.xpath("//input[@id='customer_mobile']")).sendKeys("8898462188");//Change
 				driver.findElement(By.xpath("//input[@id='gst']")).sendKeys("18AABCU9603R1ZM");
 				driver.findElement(By.xpath("//input[@id='gstname']")).sendKeys("Techsevin Pvt Ltd");
 				driver.findElement(By.xpath("//button[@class='action primary gstbtn padding_btn']")).click();
@@ -127,7 +127,7 @@ WebDriver driver;
 				driver.findElement(By.xpath("//button[@class='verif_otp action primary']")).click();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//button[@class='action primary panbtn padding_btn']")).click();
-				driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("sandeepg@techsevin.com");//Change
+				driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("sandiiippg@techsevin.com");//Change
 				driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Sandeep@12345");
 				driver.findElement(By.xpath("//input[@id='password-confirmation']")).sendKeys("Sandeep@12345");
 				driver.findElement(By.xpath("//input[@id='panname']")).sendKeys("CHFPG2292E");
@@ -166,10 +166,10 @@ WebDriver driver;
 			Thread.sleep(1000);
 
 			BecomeSeller.click();
-			driver.findElement(By.xpath("//input[@id='supplier-email']")).sendKeys("sandip.ghate@techsevin.com");//Plz Change
+			driver.findElement(By.xpath("//input[@id='supplier-email']")).sendKeys("sandipwzq.ghate@techsevin.com");//Plz Change
 			driver.findElement(By.xpath("//input[@id='supplier-password']")).sendKeys("Sandeep@1234");
 			driver.findElement(By.xpath("//input[@id='supplier-re-password']")).sendKeys("Sandeep@1234");
-			driver.findElement(By.xpath("//input[@id='customer_mobile']")).sendKeys("7755567888");//Plz Change
+			driver.findElement(By.xpath("//input[@id='customer_mobile']")).sendKeys("9878067888");//Plz Change
 			
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       
 
@@ -185,7 +185,7 @@ WebDriver driver;
 			driver.findElement(By.xpath("//input[@id='supplier-first-name']")).sendKeys("Sandeep");
 			driver.findElement(By.xpath("//input[@id='supplier-last-name']")).sendKeys("Ghate");
 			driver.findElement(By.xpath("//input[@id='supplier-company']")).sendKeys("Techsevin Pvt Ltd");
-			driver.findElement(By.xpath("//input[@id='supplier-company-url']")).sendKeys("WWW.Teqqzoknszqdj.COM");//Plz change
+			driver.findElement(By.xpath("//input[@id='supplier-company-url']")).sendKeys("WWW.zzokqqzoknszqdj.COM");//Plz change
 			driver.findElement(By.xpath("//input[@id='supplier-phone']")).sendKeys("9542564866");
 			driver.findElement(By.xpath("//select[@id='region_id']")).sendKeys("Goa");
 			driver.findElement(By.xpath("//input[@id='supplier-city']")).sendKeys("Pune");

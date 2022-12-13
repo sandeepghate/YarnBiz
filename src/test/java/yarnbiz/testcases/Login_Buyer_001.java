@@ -28,7 +28,7 @@ public class Login_Buyer_001 extends ListenerClass {
 	String ExpectedTitle= "Buyer Login"; 
 	 String ActualTitle =driver.getTitle();
 	 Assert.assertEquals(ActualTitle, ExpectedTitle);
-    // test.info("Successfully Redirect to Seller Login ");
+    // test.info("Successfully Redirect to Buyer Login ");
   }
 	
 }
