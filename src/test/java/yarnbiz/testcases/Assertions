@@ -1,0 +1,12 @@
+
+	  Thread.sleep(1000);
+       String ExpectedTitle= "Supplier Dashboard"; 
+	   String ActualTitle =driver.getTitle();
+	   Assert.assertEquals(ActualTitle, ExpectedTitle);
+	    //test.info("Redirect to edit page.");
+	  
+	  
+	  Thread.sleep(1000);
+	    	WebElement RequiredMsg=driver.findElement(By.xpath("//span[text()='My Cart,'][1]"));
+			Assert.assertTrue(RequiredMsg.isDisplayed());
+	        //test.info("My Cart is displayed.");

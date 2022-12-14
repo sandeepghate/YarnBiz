@@ -50,6 +50,13 @@
        <class name="yarnbiz.testcases.Forgot_Password_Seller_001"/>
        <class name="yarnbiz.testcases.Forgot_Password_Seller_002"/>
        <class name="yarnbiz.testcases.Forgot_Password_Seller_003"/>
+       
+       <class name="yarnbiz.testcases.Mini_Cart_001"/>
+       <class name="yarnbiz.testcases.Mini_Cart_002"/>
+       <class name="yarnbiz.testcases.Mini_Cart_003"/>
+       <class name="yarnbiz.testcases.Mini_Cart_004"/>
+       <class name="yarnbiz.testcases.Mini_Cart_005"/>
+       
               
    
     </classes>

@@ -15,13 +15,14 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.ReadDataFromConfig;
 import yarnbiz.pages.LoginPage;
+import yarnbiz.pages.MiniCartPage;
 import yarnbiz.pages.RegistrationPage;
 public class BaseTest {
 	
 	public static WebDriver driver;
 	public LoginPage lp;
 	public RegistrationPage rp;
-
+    public MiniCartPage mc;
 	
 //	@BeforeSuite
 //	public void initBrowser() throws IOException {
@@ -58,6 +59,8 @@ public class BaseTest {
 
 	    lp = new LoginPage(driver);
 		rp = new RegistrationPage(driver);
+	    mc = new MiniCartPage(driver);
+
 	}
 	
 	@AfterMethod

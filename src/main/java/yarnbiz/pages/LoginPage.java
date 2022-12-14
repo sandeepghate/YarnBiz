@@ -81,7 +81,13 @@ public class LoginPage extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     SellerLogin.click();
 	}
-
+	
+	public void BuyerCredentials()
+	{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		  driver.findElement(By.xpath("//*[@id='email']")).sendKeys("sandeepg@techsevin.com ");
+		  driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("Sandeep@12345");
+	}
     public void enterCredentials() throws InterruptedException{
 		Thread.sleep(1000);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
