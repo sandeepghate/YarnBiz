@@ -29,8 +29,9 @@ public void Home_Page_002() throws InterruptedException {
 	 String ActualTitle =driver.getTitle();
 	 Assert.assertEquals(ActualTitle, ExpectedTitle);
 	test.info("Buyer Successfully Redirect to Next Page");
+    Thread.sleep(4000);
     rp.Home();
-	Thread.sleep(2000);
+	Thread.sleep(4000);
 	rp.SellOnYarnBiz();
 	String ExpectedTitle2= "Sell Yarn - Become a Yarn Seller - Yarnbiz"; 
 	 String ActualTitle2 =driver.getTitle();

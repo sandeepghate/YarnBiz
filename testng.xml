@@ -57,6 +57,15 @@
        <class name="yarnbiz.testcases.Mini_Cart_004"/>
        <class name="yarnbiz.testcases.Mini_Cart_005"/>
        
+       <class name="yarnbiz.testcases.Cart_Page_001"/>
+       <class name="yarnbiz.testcases.Cart_Page_002"/>
+       <class name="yarnbiz.testcases.Cart_Page_003"/>
+       <class name="yarnbiz.testcases.Cart_Page_004"/>
+       <class name="yarnbiz.testcases.Cart_Page_005"/>
+       <class name="yarnbiz.testcases.Cart_Page_006"/>
+       <class name="yarnbiz.testcases.Cart_Page_007"/>
+       <class name="yarnbiz.testcases.Cart_Page_008"/>
+
               
    
     </classes>

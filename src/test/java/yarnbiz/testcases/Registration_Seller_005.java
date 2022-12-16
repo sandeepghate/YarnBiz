@@ -40,9 +40,9 @@ public class Registration_Seller_005 extends ListenerClass {
 		driver.findElement(By.xpath("//input[@id='otp']")).sendKeys("1234");
 		driver.findElement(By.xpath("//button[@class='verif_otp action primary']")).click();
 	    driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);	       
-        Thread.sleep(2000);
+        Thread.sleep(5000);
  		driver.findElement(By.xpath("//span[text()='Proceed']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         
         driver.findElement(By.xpath("//input[@id='pan']")).sendKeys("CHFPG2292E");
 		driver.findElement(By.xpath("//input[@id='panname']")).sendKeys("GHATE SANDEEP VENKATESHRAO");

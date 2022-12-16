@@ -3,6 +3,7 @@ package yarnbiz.pages;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -57,7 +58,20 @@ public class MiniCartPage extends BaseClass{
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       
 			MiniCartLogo.click();
 			}		
-		
+		public void clearCart () throws InterruptedException 
+		 {
+			Thread.sleep(2000);
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			MiniCartLogo.click();
+			Thread.sleep(1000);
+	        driver.findElement(By.xpath("//a[@class='action delete']")).click();
+			  Thread.sleep(1000);
+			  driver.findElement(By.xpath("//span[text()='OK']")).click();
+			  Thread.sleep(1000);
+			  driver.findElement(By.xpath("//button[@id='btn-minicart-close']")).click();
+
+	        
+		 }
 		public void searchProduct () throws InterruptedException {
 			Thread.sleep(1000);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       

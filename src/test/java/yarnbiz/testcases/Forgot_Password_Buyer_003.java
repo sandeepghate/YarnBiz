@@ -33,11 +33,12 @@ public class Forgot_Password_Buyer_003 extends ListenerClass {
 		driver.findElement(By.xpath("//input[@id='email_address']")).sendKeys("aaxyz@gmail.com");
 		driver.findElement(By.xpath("//span[text()='Send Email']")).click();
 
-		Thread.sleep(2000);
+		Thread.sleep(5000);
     	WebElement forgotpasslink=driver.findElement(By.xpath("//div[text()='If there is an account associated with admddin@gmail.com you will receive an email with a link to reset your password.']"));
 		Assert.assertTrue(forgotpasslink.isDisplayed());
       //  test.info("Forgot Password link is present on the login page");
 
 		//div[@class='message-error error message']
+		
 	}
 }

@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-14T16:33:16 IST" name="Default suite" finished-at="2022-12-14T16:34:35 IST" duration-ms="79787">
+  <suite started-at="2022-12-16T19:06:59 IST" name="Default suite" finished-at="2022-12-16T19:07:57 IST" duration-ms="58797">
     <groups>
     </groups>
-    <test started-at="2022-12-14T16:33:16 IST" name="Default test" finished-at="2022-12-14T16:34:35 IST" duration-ms="79787">
-      <class name="yarnbiz.testcases.Mini_Cart_001">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:yarnbiz.testcases.Mini_Cart_001@6b0d80ed]" started-at="2022-12-14T16:33:16 IST" name="setUp" finished-at="2022-12-14T16:34:15 IST" duration-ms="59612" status="PASS">
+    <test started-at="2022-12-16T19:06:59 IST" name="Default test" finished-at="2022-12-16T19:07:57 IST" duration-ms="58797">
+      <class name="yarnbiz.testcases.Cart_Page_008">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:yarnbiz.testcases.Cart_Page_008@928763c]" started-at="2022-12-16T19:06:59 IST" name="setUp" finished-at="2022-12-16T19:07:16 IST" duration-ms="17665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Mini_Cart_001()[pri:0, instance:yarnbiz.testcases.Mini_Cart_001@6b0d80ed]" started-at="2022-12-14T16:34:15 IST" name="Mini_Cart_001" finished-at="2022-12-14T16:34:35 IST" duration-ms="20099" status="PASS">
+        <test-method signature="Cart_Page_008()[pri:0, instance:yarnbiz.testcases.Cart_Page_008@928763c]" started-at="2022-12-16T19:07:16 IST" name="Cart_Page_008" finished-at="2022-12-16T19:07:57 IST" duration-ms="40379" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Mini_Cart_001 -->
-      </class> <!-- yarnbiz.testcases.Mini_Cart_001 -->
+        </test-method> <!-- Cart_Page_008 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:yarnbiz.testcases.Cart_Page_008@928763c]" started-at="2022-12-16T19:07:57 IST" name="tearDown" finished-at="2022-12-16T19:07:57 IST" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- yarnbiz.testcases.Cart_Page_008 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
