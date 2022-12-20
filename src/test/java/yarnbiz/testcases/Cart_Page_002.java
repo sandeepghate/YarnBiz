@@ -22,7 +22,7 @@ public class Cart_Page_002 extends ListenerClass{
 	@Test
 	public void Cart_Page_002() throws Exception
 	{				
-		lp.BuyerLogin();;
+		 lp.BuyerLogin();;
 		//test.info("Clicked On Buyer Login");
 	     lp.BuyerCredentials();
 	      // test.info("Credentials Entered ");

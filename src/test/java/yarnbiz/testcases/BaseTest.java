@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.ReadDataFromConfig;
 import yarnbiz.pages.CartPage;
+import yarnbiz.pages.CheckOutPage;
 import yarnbiz.pages.LoginPage;
 import yarnbiz.pages.MiniCartPage;
 import yarnbiz.pages.RegistrationPage;
@@ -25,6 +26,8 @@ public class BaseTest {
 	public RegistrationPage rp;
     public MiniCartPage mc;
     public CartPage cp;
+    public CheckOutPage cop;
+
 
 	
 //	@BeforeSuite
@@ -64,14 +67,14 @@ public class BaseTest {
 		rp = new RegistrationPage(driver);
 	    mc = new MiniCartPage(driver);
 	    cp = new CartPage(driver);
-
+        cop = new CheckOutPage(driver);
 	}
 	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.close();
-	}
+//	@AfterMethod
+//	public void tearDown()
+//	{
+//		driver.close();
+//	}
 //	
 //	@BeforeClass
 //	public void objectCreation() throws IOException

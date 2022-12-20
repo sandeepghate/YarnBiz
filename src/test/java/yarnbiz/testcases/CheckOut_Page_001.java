@@ -7,21 +7,19 @@ import org.testng.annotations.Test;
 
 import extentlisteners.ListenerClass;
 
-public class Cart_Page_008 extends ListenerClass{
-	
+public class CheckOut_Page_001 extends ListenerClass {
 
 /*******************************************************************************************************
  * Author    :Sandeep Ghate
  * 
- * Test Case :verify if an item is out of stock 
- * Test ID   :TC_YBZ_125
+ * Test Case :Verify the Check Out Page
+ * Test ID   :TC_YBZ_126
  * 
- * Summary   :a user can not add it to the cart
- * 
+ * Summary   :Buyer should be able to nevigate to Check Out Page
+ *   
 ********************************************************************************************************/
-
 	@Test
-	public void Cart_Page_008() throws Exception
+	public void CheckOut_Page_001() throws Exception
 	{				
 		lp.BuyerLogin();
 		//test.info("Clicked On Buyer Login");
@@ -29,18 +27,21 @@ public class Cart_Page_008 extends ListenerClass{
 		//test.info("Credentials Entered ");
 		  lp.clickOnLogin();
 	      //test.info("clicked on login button");
+	    
 		  Thread.sleep(1000);
-
-//		  mc.clearCart();
-//		  Thread.sleep(1000);
-//		  
-		 cp.OutOfStockProductInCart();
+		 mc.addProductInCart();
 		 
-         Thread.sleep(2000);  
-	     WebElement RequiredMsg=driver.findElement(By.xpath("//div[text()='Product that you are trying to add is not available.']"));
-	     Assert.assertTrue(RequiredMsg.isDisplayed());
-           //test.info("Product out of stock");
-  
-	}
+		  Thread.sleep(10000);
+		  mc.minicartlogo();
 
+	        Thread.sleep(1000);
+		  cop.ClickOnCheckOut();
+		  
+		        Thread.sleep(1000);
+				  String ExpectedTitle= "Checkout"; 
+				   String ActualTitle =driver.getTitle();
+				   Assert.assertEquals(ActualTitle, ExpectedTitle);
+				 //   test.info("Successfully Redirect to checkout page.");
+					
+	}
 }

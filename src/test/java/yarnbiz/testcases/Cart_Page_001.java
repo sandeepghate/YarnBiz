@@ -10,7 +10,6 @@ import extentlisteners.ListenerClass;
 public class Cart_Page_001 extends ListenerClass{
 
 
-
 /*******************************************************************************************************
  * Author    :Sandeep Ghate
  * 
@@ -41,7 +40,7 @@ public class Cart_Page_001 extends ListenerClass{
 		  String ExpectedTitle= "Shopping Cart"; //product name
 		   String ActualTitle =driver.getTitle();
 		   Assert.assertEquals(ActualTitle, ExpectedTitle);
-		 //   test.info("Successfully Redirect to cart page.");
+	   //   test.info("Successfully Redirect to cart page.");
 			
 
 		

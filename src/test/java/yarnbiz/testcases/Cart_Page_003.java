@@ -28,7 +28,7 @@ public class Cart_Page_003 extends ListenerClass{
         lp.BuyerCredentials();
 		//test.info("Credentials Entered ");
 		  lp.clickOnLogin();
-	      //test.info("clicked on login button");
+	     //test.info("clicked on login button");
 	    
 		  Thread.sleep(1000);
 		 mc.addProductInCart();
