@@ -5,22 +5,23 @@ import org.testng.annotations.Test;
 
 import extentlisteners.ListenerClass;
 
-public class CheckOut_Page_003 extends ListenerClass {
+public class CheckOut_Page_004 extends ListenerClass {
+
 
 
 /*******************************************************************************************************
  * Author    :Sandeep Ghate
  * 
- * Test Case :Verify the add New Address on check out page
- * Test ID   :TC_YBZ_128
+ * Test Case :Verify the Edit button on below the new address added
+ * Test ID   :TC_YBZ_130
  * 
- * Summary   :Buyer should able to click on new address and add new address successfully
+ * Summary   :Buyer should be able to Click on edit button and edit the New address successfully
  * 
  *     
 ********************************************************************************************************/
 	
 	@Test
-	public void CheckOut_Page_003() throws Exception
+	public void CheckOut_Page_004() throws Exception
 	{				
 		lp.BuyerLogin();
 		//test.info("Clicked On Buyer Login");
@@ -39,6 +40,14 @@ public class CheckOut_Page_003 extends ListenerClass {
 		  cop.ClickOnCheckOut();
 	        Thread.sleep(1000);
 	        cop.shippingAddress();
+	        
+	        Thread.sleep(5000);
+
+	       driver.findElement(By.xpath("(//button[text()='Edit'])[3]")).click();
+	       driver.findElement(By.xpath("//input[@name='company']")).sendKeys("TCS");
+	       driver.findElement(By.xpath("//span[text()='Ship Here']")).click();
+
+	        		
 	        
 	}
 }

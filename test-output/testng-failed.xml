@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="yarnbiz.testcases.CheckOut_Page_003">
+      <class name="yarnbiz.testcases.CheckOut_Page_010">
         <methods>
-          <include name="CheckOut_Page_003"/>
+          <include name="CheckOut_Page_009"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- yarnbiz.testcases.CheckOut_Page_003 -->
+      </class> <!-- yarnbiz.testcases.CheckOut_Page_010 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

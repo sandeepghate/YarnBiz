@@ -66,6 +66,16 @@
        <class name="yarnbiz.testcases.Cart_Page_007"/>
        <class name="yarnbiz.testcases.Cart_Page_008"/>
 
+       <class name="yarnbiz.testcases.CheckOut_Page_001"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_002"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_003"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_004"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_005"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_006"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_007"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_008"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_009"/>
+       <class name="yarnbiz.testcases.CheckOut_Page_010"/>
               
    
     </classes>
