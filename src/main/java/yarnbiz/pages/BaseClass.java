@@ -10,8 +10,9 @@ public abstract class BaseClass {
 	public BaseClass() throws IOException
 	{
 		prop = new Properties();
+		//String path = System.getProperty("user.dir") + "\\config.properties"; //for windows
 
-		String path = System.getProperty("user.dir") + "\\config.properties";
+		String path = "/home/techsevin/git/YarnBiz/config.properties";  //for linux
 
 		fis = new FileInputStream(path);
 

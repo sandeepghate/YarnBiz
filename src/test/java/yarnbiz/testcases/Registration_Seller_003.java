@@ -1,5 +1,7 @@
 package yarnbiz.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -52,7 +54,7 @@ public class Registration_Buyer_003 extends ListenerClass{
         
 		Thread.sleep(1000);
     	WebElement RequiredMsg=driver.findElement(By.xpath("//div[text()='This is a required field.']"));
-		Assert.assertTrue(RequiredMsg.isDisplayed());
+		AssertJUnit.assertTrue(RequiredMsg.isDisplayed());
         test.info("Get error message- this is required field");
 		
 		

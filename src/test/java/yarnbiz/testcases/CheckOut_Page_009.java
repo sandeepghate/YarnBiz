@@ -38,18 +38,18 @@ public class CheckOut_Page_009 extends ListenerClass {
 
 		        Thread.sleep(1000);
 			  cop.ClickOnCheckOut();
-		        Thread.sleep(2000);
+		        Thread.sleep(5000);
 		     
 		       driver.findElement(By.xpath("//button[@class='button action continue primary']")).click();
 		       
 		        		
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 			       driver.findElement(By.xpath("//span[text()='Pay Now']")).click();
 
-			        Thread.sleep(1000);
+			        Thread.sleep(5000);
 			       driver.findElement(By.xpath("(//span[text()='Place Order'])[1]")).click();
 
-			       	Thread.sleep(1000);
+			       	Thread.sleep(3000);
 				    	WebElement orderId=driver.findElement(By.xpath("(//p[@class='amtheme-title'])[3]"));
 						Assert.assertTrue(orderId.isDisplayed());
 				        //test.info("Order Date Present on success page.");

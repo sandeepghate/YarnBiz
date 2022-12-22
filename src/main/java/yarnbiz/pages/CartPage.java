@@ -72,7 +72,7 @@ public class CartPage extends BaseClass {
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       
 			Search.sendKeys("test11");//search product
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//img[@alt='test11']")).click();
+			driver.findElement(By.xpath("//span[text()='Test11']")).click();
 			Thread.sleep(1000);
             EnterZip.sendKeys("411006");
 			Thread.sleep(1000);

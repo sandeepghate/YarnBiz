@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowser">
+<listeners>
+
+<listener class-name="extentlisteners.ListenerClass"></listener>
+
+</listeners>
+
+  
+  <test thread-count="10" name="test2">
+
+  <parameter name="browser" value="firefox" />
+
+   <classes>
+       
+     <class name="yarnbiz.testcases.Home_Page_001"/> 
+        
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

@@ -1,16 +1,24 @@
 package yarnbiz.testcases;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.GeckoDriverService;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.ReadDataFromConfig;
@@ -29,24 +37,6 @@ public class BaseTest {
     public CheckOutPage cop;
 
 
-	
-//	@BeforeSuite
-//	public void initBrowser() throws IOException {
-//		WebDriverManager.chromedriver().setup();
-//		ChromeOptions options = new ChromeOptions();
-//		
-//	options.addArguments("--disable-notifications");	
-////	options.addArguments("--incognito");
-//		options.addArguments("--start-maximized");
-////	options.addArguments("--headless");
-////	Headless is a mode in which we execute the script but it will not display any activity to the user 
-//		
-//		driver = new ChromeDriver(options); //chrome browser will get open
-////        String url = ReadDataFromConfig.getPropData("url");
-////	    driver.get(url);		
-//
-//	  // driver.switchTo().alert().accept();
-//	}
 
 	@BeforeMethod
 	public void setUp() throws IOException, InterruptedException
@@ -69,12 +59,13 @@ public class BaseTest {
 	    cp = new CartPage(driver);
         cop = new CheckOutPage(driver);
 	}
+
 	
-//	@AfterMethod
-//	public void tearDown()
-//	{
-//		driver.close();
-//	}
+	@AfterMethod
+	public void tearDown()
+	{
+		driver.close();
+	}
 //	
 //	@BeforeClass
 //	public void objectCreation() throws IOException

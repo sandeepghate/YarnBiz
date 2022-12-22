@@ -20,18 +20,18 @@ import extentlisteners.ListenerClass;
 
 public class Login_Seller_ extends ListenerClass{
 	@Test
-	public void TC_YBZ_004() throws Exception
+	public void Login_Seller_() throws Exception
 	{				
 		lp.SellerLogin();;
-		test.info("Clicked On Seller Login");
+		//test.info("Clicked On Seller Login");
 		lp.enterCredentials();
-	   test.info("Credentials Entered ");
+	   //test.info("Credentials Entered ");
 		
         // lp.captcha();
    	   // test.info("Captcha checkbox clicked");
 		
 		lp.clickOnLogin();
-	    test.info("clicked on login button");
+	    //test.info("clicked on login button");
 	    
 	   String ExpectedTitle= "Supplier Dashboard"; 
 	   String ActualTitle =driver.getTitle();

@@ -1,5 +1,7 @@
 package yarnbiz.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -44,20 +46,20 @@ public class CheckOut_Page_010 extends ListenerClass  {
 		       driver.findElement(By.xpath("//button[@class='button action continue primary']")).click();
 		       
 		        		
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 			       driver.findElement(By.xpath("//span[text()='Pay Now']")).click();
 
-			        Thread.sleep(3000);
+			        Thread.sleep(5000);
 			       driver.findElement(By.xpath("(//span[text()='Place Order'])[1]")).click();
 
-			       	Thread.sleep(3000);
+			       	Thread.sleep(5000);
 				       driver.findElement(By.xpath("//a[@class='action outline continue']")).click();
 
 
 				 	  Thread.sleep(3000);
 				        String ExpectedTitle= "Leading Yarn Market Place in India | YarnBiz"; 
 				 	   String ActualTitle =driver.getTitle();
-				 	   Assert.assertEquals(ActualTitle, ExpectedTitle);
+				 	   AssertJUnit.assertEquals(ActualTitle, ExpectedTitle);
 				 	    //test.info("Redirect to Home page.");
 				 	  
 		}

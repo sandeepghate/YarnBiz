@@ -10,7 +10,7 @@
   <test thread-count="5" name="Test">
    <classes>
        
-       <class name="yarnbiz.testcases.Home_Page_001"/>
+       <class name="yarnbiz.testcases.Home_Page_001"/> 
        <class name="yarnbiz.testcases.Home_Page_002"/>
              
        <class name="yarnbiz.testcases.Registration_Buyer_001"/>
@@ -46,10 +46,8 @@
       
        <class name="yarnbiz.testcases.Forgot_Password_Buyer_001"/>
        <class name="yarnbiz.testcases.Forgot_Password_Buyer_002"/>
-       <class name="yarnbiz.testcases.Forgot_Password_Buyer_003"/>
        <class name="yarnbiz.testcases.Forgot_Password_Seller_001"/>
        <class name="yarnbiz.testcases.Forgot_Password_Seller_002"/>
-       <class name="yarnbiz.testcases.Forgot_Password_Seller_003"/>
        
        <class name="yarnbiz.testcases.Mini_Cart_001"/>
        <class name="yarnbiz.testcases.Mini_Cart_002"/>

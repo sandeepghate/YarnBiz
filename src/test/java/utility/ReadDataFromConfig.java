@@ -9,7 +9,9 @@ public class ReadDataFromConfig {
 	{
 		Properties prop = new Properties();
 		
-		String path = System.getProperty("user.dir")+"\\config.properties";
+	//	String path = System.getProperty("user.dir")+"\\config.properties"; //for windows
+
+		String path = "/home/techsevin/git/YarnBiz/config.properties"; //for linux
 		
 		FileInputStream fis = new FileInputStream(path);
 		

@@ -19,18 +19,16 @@ public class ScreenShot {
 		
 		File source = scrshot.getScreenshotAs(OutputType.FILE);
 		
-	    //	String path = "C:\\Users\\admin\\Desktop\\yarnbizfailedscr"+filename+".png";
+	//	String path = System.getProperty("user.dir")+"\\screenshots\\"+filename+".png"; //for windows
 
-		//	Alternate way to define the path
-		
-		String path = System.getProperty("user.dir")+"\\screenshots\\"+filename+".png";
-		
+		String path = "/home/techsevin/git/YarnBiz/screenshots/"+filename+".png";  //for linux
 		
 		File destination = new File(path);
-	
+	    
 		FileHandler.copy(source, destination);
 		
         return path;
+        
 	}
 	
 	
