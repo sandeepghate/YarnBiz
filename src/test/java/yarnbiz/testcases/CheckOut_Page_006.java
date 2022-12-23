@@ -43,7 +43,7 @@ public class CheckOut_Page_006 extends ListenerClass{
 	     
 	       driver.findElement(By.xpath("//button[@class='button action continue primary']")).click();
 	       
-	       Thread.sleep(3000);
+	       Thread.sleep(7000);
 	       driver.findElement(By.xpath("//span[text()='Net Banking']")).click();
 
 	       Thread.sleep(5000);
@@ -52,7 +52,7 @@ public class CheckOut_Page_006 extends ListenerClass{
 	        //test.info("My Cart is displayed.");
 	       
 	        		
-			Thread.sleep(3000);
+			Thread.sleep(7000);
 		       driver.findElement(By.xpath("//span[text()='Pay Now']")).click();
 
 		       Thread.sleep(5000);

@@ -32,7 +32,7 @@ public class Registration_Buyer_002 extends ListenerClass{
 	public void Registration_Buyer_002() throws InterruptedException
 	{		
 		rp.BuyerRegistration();
-		test.info("Buyer Registeration form filled Successfully");
+		//test.info("Buyer Registeration form filled Successfully");
 	
 	}
 	

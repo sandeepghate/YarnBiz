@@ -7,7 +7,7 @@
 
 </listeners>
 
-  <test thread-count="5" name="Smoke">
+  <test thread-count="5" name="test">
    <classes> 
      <class name="yarnbiz.testcases.Home_Page_001"/>   
     </classes>  

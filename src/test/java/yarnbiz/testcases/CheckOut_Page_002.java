@@ -32,12 +32,12 @@ public class CheckOut_Page_002 extends ListenerClass {
 		  Thread.sleep(1000);
 		 mc.addProductInCart();
 		 
-		  Thread.sleep(10000);
+		  Thread.sleep(8000);
 		  mc.minicartlogo();
 
-	        Thread.sleep(1000);
+	        Thread.sleep(2000);
 		  cop.ClickOnCheckOut();
-	        Thread.sleep(1000);
+	        Thread.sleep(8000);
 		  driver.findElement(By.xpath("//button[@class='action action-select-shipping-item']")).click();
 		        
 	}

@@ -31,9 +31,9 @@ public class Cart_Page_008 extends ListenerClass{
 	      //test.info("clicked on login button");
 		  Thread.sleep(1000);
 
-//		  mc.clearCart();
-//		  Thread.sleep(1000);
-//		  
+		  mc.clearCart();
+		  Thread.sleep(1000);
+		  
 		 cp.OutOfStockProductInCart();
 		 
          Thread.sleep(2000);  

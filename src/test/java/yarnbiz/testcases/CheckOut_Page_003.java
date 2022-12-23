@@ -32,7 +32,7 @@ public class CheckOut_Page_003 extends ListenerClass {
 		  Thread.sleep(1000);
 		 mc.addProductInCart();
 		 
-		  Thread.sleep(10000);
+		  Thread.sleep(8000);
 		  mc.minicartlogo();
 
 	        Thread.sleep(1000);

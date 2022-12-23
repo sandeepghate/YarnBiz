@@ -34,20 +34,20 @@ public class CheckOut_Page_007 extends ListenerClass {
 		  Thread.sleep(1000);
 		 mc.addProductInCart();
 		 
-		  Thread.sleep(10000);
+		  Thread.sleep(8000);
 		  mc.minicartlogo();
 
 	        Thread.sleep(1000);
 		  cop.ClickOnCheckOut();
-	        Thread.sleep(2000);
+	        Thread.sleep(8000);
 	     
 	       driver.findElement(By.xpath("//button[@class='button action continue primary']")).click();
 	       
 	        		
-			Thread.sleep(3000);
+			Thread.sleep(8000);
 		       driver.findElement(By.xpath("//span[text()='Pay Now']")).click();
 
-		        Thread.sleep(1000);
+		        Thread.sleep(8000);
 		       driver.findElement(By.xpath("(//span[text()='Place Order'])[1]")).click();
 
 		       Thread.sleep(8000);
