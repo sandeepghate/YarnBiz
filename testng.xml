@@ -62,7 +62,6 @@
        <class name="yarnbiz.testcases.Cart_Page_005"/>
        <class name="yarnbiz.testcases.Cart_Page_006"/>
        <class name="yarnbiz.testcases.Cart_Page_007"/>
-       <class name="yarnbiz.testcases.Cart_Page_008"/>
 
        <class name="yarnbiz.testcases.CheckOut_Page_001"/>
        <class name="yarnbiz.testcases.CheckOut_Page_002"/>

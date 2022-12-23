@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="yarnbiz.testcases.Cart_Page_008">
+      <class name="yarnbiz.testcases.Mini_Cart_002">
         <methods>
-          <include name="Cart_Page_008"/>
+          <include name="Mini_Cart_002"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- yarnbiz.testcases.Cart_Page_008 -->
+      </class> <!-- yarnbiz.testcases.Mini_Cart_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
