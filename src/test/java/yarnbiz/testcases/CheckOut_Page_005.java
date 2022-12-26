@@ -39,17 +39,17 @@ public class CheckOut_Page_005 extends ListenerClass {
 
 	        Thread.sleep(1000);
 		  cop.ClickOnCheckOut();
-	        Thread.sleep(2000);
+	        Thread.sleep(5000);
 	     
 	       driver.findElement(By.xpath("//button[@class='button action continue primary']")).click();
 	       
-	       Thread.sleep(3000);
+	       Thread.sleep(5000);
 	     
 	    	WebElement textpresent=driver.findElement(By.xpath("//div[text()='Select Billing Address And Payment Method']"));
 			Assert.assertTrue(textpresent.isDisplayed());
 	        //test.info("My Cart is displayed.");
 			
-		       Thread.sleep(1000);
+		       Thread.sleep(5000);
 
 	       String ExpectedTitle= "Checkout"; 
 		   String ActualTitle =driver.getTitle();

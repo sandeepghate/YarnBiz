@@ -80,6 +80,14 @@
        <class name="yarnbiz.testcases.PDP_Page_004"/>
        <class name="yarnbiz.testcases.PDP_Page_005"/>
        <class name="yarnbiz.testcases.PDP_Page_006"/>
+       
+       <class name="yarnbiz.testcases.PDP_Page_001"/>
+       <class name="yarnbiz.testcases.PDP_Page_002"/>
+       <class name="yarnbiz.testcases.PDP_Page_003"/>
+       <class name="yarnbiz.testcases.PDP_Page_004"/>
+       <class name="yarnbiz.testcases.PDP_Page_005"/>
+       <class name="yarnbiz.testcases.PDP_Page_006"/>
+      
 
     </classes>
     
