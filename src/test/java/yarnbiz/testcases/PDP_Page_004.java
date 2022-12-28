@@ -17,6 +17,8 @@ public class PDP_Page_004 extends ListenerClass{
  * Test ID   :TC_YBZ_164
  * 
  * Summary   :Buyer should be able to click on watch list and add product to Watch List
+ * 
+ *
 ********************************************************************************************************/
     @Test
 	public void PDP_Page_004 () throws InterruptedException {
@@ -40,6 +42,5 @@ public class PDP_Page_004 extends ListenerClass{
 			Assert.assertTrue(productName.isDisplayed());
 	        //test.info("Product successfully added to watchlist.");
 			
-		
 	}
 }

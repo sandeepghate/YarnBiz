@@ -6,6 +6,13 @@
 	    //test.info("Redirect to edit page.");
 	  
 	  
+	    Thread.sleep(3000);
+	      String ExpectedUrl= "https://stage.yarnbiz.com/spun/cotton.html?product_list_order=name"; 
+		   String ActualUrl =driver.getCurrentUrl();
+		   Assert.assertEquals(ActualUrl, ExpectedUrl);
+		    //test.info("Redirect to current URL page.");
+		    
+		    
 	  Thread.sleep(1000);
 	    	WebElement RequiredMsg=driver.findElement(By.xpath("//span[text()='My Cart,'][1]"));
 			Assert.assertTrue(RequiredMsg.isDisplayed());

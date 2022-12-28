@@ -3,6 +3,7 @@ package yarnbiz.pages;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,6 +40,16 @@ public class PDP_Page extends BaseClass {
 		Search.sendKeys("jaimin");//search product
 		Thread.sleep(2000);
         SelectProduct.click();
+		Thread.sleep(1000);
+	
+	}
+	public void SearchSpunProduct () throws InterruptedException {
+		
+		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       
+		Search.sendKeys("Test3");//search product
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@title='test3']")).click();;
 		Thread.sleep(1000);
 	
 	}

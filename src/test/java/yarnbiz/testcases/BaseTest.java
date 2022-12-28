@@ -27,6 +27,7 @@ import yarnbiz.pages.CheckOutPage;
 import yarnbiz.pages.LoginPage;
 import yarnbiz.pages.MiniCartPage;
 import yarnbiz.pages.PDP_Page;
+import yarnbiz.pages.PLP_Page;
 import yarnbiz.pages.RegistrationPage;
 public class BaseTest {
 	
@@ -37,6 +38,8 @@ public class BaseTest {
     public CartPage cp;
     public CheckOutPage cop;
     public PDP_Page pd;
+    public PLP_Page pl;
+
 
 
 
@@ -61,7 +64,7 @@ public class BaseTest {
 	    cp = new CartPage(driver);
         cop = new CheckOutPage(driver);
         pd = new PDP_Page(driver);
-
+        pl=new PLP_Page(driver);
 	}
 
 	
