@@ -23,7 +23,7 @@ public class Mini_Cart_001 extends ListenerClass {
 	@Test
 	public void Mini_Cart_001() throws Exception
 	{				
-		lp.BuyerLogin();;
+		lp.BuyerLogin();
 		//test.info("Clicked On Buyer Login");
 	     lp.BuyerCredentials();
 	      // test.info("Credentials Entered ");
@@ -36,7 +36,7 @@ public class Mini_Cart_001 extends ListenerClass {
 			Thread.sleep(1000);
 	    	WebElement RequiredMsg=driver.findElement(By.xpath("//span[text()='My Cart,'][1]"));
 			Assert.assertTrue(RequiredMsg.isDisplayed());
-	        test.info("My Cart is displayed.");
+	      //  test.info("My Cart is displayed.");
 		    
 
 		

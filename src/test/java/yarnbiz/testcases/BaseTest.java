@@ -29,6 +29,7 @@ import yarnbiz.pages.MiniCartPage;
 import yarnbiz.pages.PDP_Page;
 import yarnbiz.pages.PLP_Page;
 import yarnbiz.pages.RegistrationPage;
+import yarnbiz.pages.SellerProduct;
 public class BaseTest {
 	
 	public static WebDriver driver;
@@ -39,6 +40,7 @@ public class BaseTest {
     public CheckOutPage cop;
     public PDP_Page pd;
     public PLP_Page pl;
+    public SellerProduct sp;
 
 
 
@@ -55,8 +57,6 @@ public class BaseTest {
 
 		String url = ReadDataFromConfig.getPropData("stageurl");
 	    driver.get(url);
-       //Thread.sleep(100);
-      //driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 	    lp = new LoginPage(driver);
 		rp = new RegistrationPage(driver);
@@ -65,6 +65,8 @@ public class BaseTest {
         cop = new CheckOutPage(driver);
         pd = new PDP_Page(driver);
         pl=new PLP_Page(driver);
+        sp=new SellerProduct(driver);
+        
 	}
 
 	
