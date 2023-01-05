@@ -9,7 +9,6 @@ import extentlisteners.ListenerClass;
 
 public class Cart_Page_001 extends ListenerClass{
 
-
 /*******************************************************************************************************
  * Author    :Sandeep Ghate
  * 
@@ -23,7 +22,7 @@ public class Cart_Page_001 extends ListenerClass{
 	@Test
 	public void Cart_Page_001() throws Exception
 	{				
-		lp.BuyerLogin();;
+		lp.BuyerLogin();
 		//test.info("Clicked On Buyer Login");
 	     lp.BuyerCredentials();
 	      // test.info("Credentials Entered ");

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-02T18:19:32 IST" name="Default suite" finished-at="2023-01-02T18:20:18 IST" duration-ms="46848">
+  <suite started-at="2023-01-05T16:03:00 IST" name="Default suite" finished-at="2023-01-05T16:03:21 IST" duration-ms="20837">
     <groups>
     </groups>
-    <test started-at="2023-01-02T18:19:32 IST" name="Default test" finished-at="2023-01-02T18:20:18 IST" duration-ms="46848">
-      <class name="yarnbiz.testcases.Seller_Product_001">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:yarnbiz.testcases.Seller_Product_001@2ca26d77]" started-at="2023-01-02T18:19:32 IST" name="setUp" finished-at="2023-01-02T18:19:42 IST" duration-ms="10456" status="PASS">
+    <test started-at="2023-01-05T16:03:00 IST" name="Default test" finished-at="2023-01-05T16:03:21 IST" duration-ms="20837">
+      <class name="yarnbiz.testcases.Login_Seller_">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:yarnbiz.testcases.Login_Seller_@1169afe1]" started-at="2023-01-05T16:03:00 IST" name="setUp" finished-at="2023-01-05T16:03:11 IST" duration-ms="10950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Seller_Product_001()[pri:0, instance:yarnbiz.testcases.Seller_Product_001@2ca26d77]" started-at="2023-01-02T18:19:42 IST" name="Seller_Product_001" finished-at="2023-01-02T18:20:18 IST" duration-ms="36326" status="PASS">
+        <test-method signature="Login_Seller_()[pri:0, instance:yarnbiz.testcases.Login_Seller_@1169afe1]" started-at="2023-01-05T16:03:11 IST" name="Login_Seller_" finished-at="2023-01-05T16:03:21 IST" duration-ms="9819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Seller_Product_001 -->
-      </class> <!-- yarnbiz.testcases.Seller_Product_001 -->
+        </test-method> <!-- Login_Seller_ -->
+      </class> <!-- yarnbiz.testcases.Login_Seller_ -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -48,6 +48,9 @@
        <class name="yarnbiz.testcases.Forgot_Password_Buyer_002"/>
        <class name="yarnbiz.testcases.Forgot_Password_Seller_001"/>
        <class name="yarnbiz.testcases.Forgot_Password_Seller_002"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Buyer_003"/>
+       <class name="yarnbiz.testcases.Forgot_Password_Seller_003"/>
+
        
        <class name="yarnbiz.testcases.Mini_Cart_001"/>
        <class name="yarnbiz.testcases.Mini_Cart_002"/>
@@ -90,6 +93,8 @@
        <class name="yarnbiz.testcases.PLP_Page_005"/>
        <class name="yarnbiz.testcases.PLP_Page_006"/>
        
+       <class name="yarnbiz.testcases.Seller_Product_001"/>
+       <class name="yarnbiz.testcases.Seller_Product_002"/>
     
      
     </classes>

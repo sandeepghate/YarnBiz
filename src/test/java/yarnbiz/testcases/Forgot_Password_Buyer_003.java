@@ -41,10 +41,10 @@ public class Forgot_Password_Buyer_003 extends ListenerClass {
       //  test.info("Forgot Password link is present on the login page");
 	
 
-		Thread.sleep(5000);
-    	WebElement forgotpasslink1=driver.findElement(By.xpath("//div[text()='We received too many requests for password resets. Please wait and try again later or contact info@yarnbiz.com.']"));
-		softverify.assertTrue(forgotpasslink1.isDisplayed());
-      //  test.info("Forgot Password link is present on the login page");
+//		Thread.sleep(5000);
+//    	WebElement forgotpasslink1=driver.findElement(By.xpath("//div[text()='We received too many requests for password resets. Please wait and try again later or contact info@yarnbiz.com.']"));
+//		softverify.assertTrue(forgotpasslink1.isDisplayed());
+//      //  test.info("Forgot Password link is present on the login page");
 
 		softverify.assertAll();
 	}

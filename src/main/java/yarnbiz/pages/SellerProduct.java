@@ -3,6 +3,7 @@ package yarnbiz.pages;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -106,8 +107,8 @@ WebDriver driver;
 		//filament.click();
 		Thread.sleep(2000);
 		ContinueButton.click();
-		productName.sendKeys("Auto Product 3"); //CHange
-		sku.sendKeys("1001:40");//change
+		productName.sendKeys("Auto Product 4"); //CHange
+		sku.sendKeys("1001:30");//change
 		prizeKg.sendKeys("100");
 		weightKg.sendKeys("100");
 		stock.sendKeys("100");
@@ -124,6 +125,18 @@ WebDriver driver;
 		
         Thread.sleep(2000);
 		Save.click();
+	}
+	
+	public void filterProduct() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);	       
+		Products.click();
+		Thread.sleep(2000);
+		MyProducts.click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[text()='Filters']")).click();
+		
+		
 	}
 	}
 
