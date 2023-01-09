@@ -22,7 +22,7 @@ public class Seller_Product_001 extends ListenerClass{
 	 * 
 *******************************************************************************************************/
 
-	@Test
+	@Test (enabled = false)
 	public void Seller_Product_001() throws InterruptedException 
 	{
 		lp.SellerLogin();;

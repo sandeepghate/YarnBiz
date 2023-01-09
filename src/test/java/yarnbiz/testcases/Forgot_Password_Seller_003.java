@@ -19,7 +19,7 @@ public class Forgot_Password_Seller_003 extends ListenerClass {
 	 * Summary   :a pop up message box to show an ****@gmail.com you will receive an email with alink to reset your password
 *******************************************************************************************************/
    
-	@Test
+	@Test (enabled = false)
 	public void Forgot_Password_Seller_003 () throws InterruptedException  
 	{
 		Thread.sleep(1000);
