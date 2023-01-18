@@ -34,9 +34,7 @@ public class BaseTest1 {
     public PLP_Page pl;
     public SellerProduct sp;
 
-
-
-
+    
 	@BeforeMethod
 	@Parameters("browser")
 	public void setUp(String browserName) throws IOException, InterruptedException
