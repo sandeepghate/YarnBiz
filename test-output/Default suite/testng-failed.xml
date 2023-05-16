@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="yarnbiz.testcases.CrossBrowserBase">
+      <class name="yarnbiz.testcases.Registration_Seller_004">
         <methods>
-          <include name="Login"/>
+          <include name="setUp"/>
+          <include name="Registration_Seller_004"/>
           <include name="tearDown"/>
-          <include name="initialize"/>
         </methods>
-      </class> <!-- yarnbiz.testcases.CrossBrowserBase -->
+      </class> <!-- yarnbiz.testcases.Registration_Seller_004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
